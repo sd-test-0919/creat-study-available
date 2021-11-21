@@ -1,4 +1,4 @@
-# creat-study-available
+# create-study-available
 ## 学习是一生的事情，要有开始的勇气和坚持下去的决心
 - mrjob-skill
   -  map reduce处理数据的一些小问题
