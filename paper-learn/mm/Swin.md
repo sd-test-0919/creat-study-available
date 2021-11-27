@@ -19,7 +19,7 @@ Patch Merging:
 -  2, Wh\*Ww
 -  2, wh\*ww, 1
 -  2, 1, wh\*ww
--  # 最终得到 2, wh\*ww, wh\*ww 形状的张量
+-  最终得到 2, wh\*ww, wh\*ww 形状的张量
 -  将(x，y)展开为一维，将x,y坐标相加转换为一维，偏移量是相等的。
 -  所以针对其中一维乘2 * self.window_size[1] - 1，在最后一维上进行求和，成为一个不参与训练
 ## shift window attention
