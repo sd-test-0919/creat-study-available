@@ -21,6 +21,9 @@ Patch Merging:
 -  最终得到 2, wh\*ww, wh\*ww 形状的张量
 -  将(x，y)展开为一维，将x,y坐标相加转换为一维，偏移量是相等的。
 -  所以针对其中一维乘2 * self.window_size[1] - 1，在最后一维上进行求和，成为一个不参与训练
+   - 如果乘以小于window\_size，得到的是序列token的相对位置偏移量，忽略图片本身存在的空间位置信息
+   - 如果乘以的数值大于window\_size，小于(2 * window\_size - 1)，空间中相对位置不对；
+   - 如果乘以的数值大于(2 * window\_size - 1)，可以保证空间位置信息，但是造成了参数量增加，并且存在没有利用的参数。 
 ## shift window attention
 - 可参考https://zhuanlan.zhihu.com/p/367111046
   - 把9window -> 4window如何旋转，如何计算mask介绍的很清楚细致
