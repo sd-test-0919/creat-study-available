@@ -19,6 +19,9 @@ DIN方法基于对用户历史行为数据的两个观察
 - 最后提出了尝试过 LSTM 对用户历史行为数据进行建模。但它没有显示出任何改善。与 NLP 任务中受语法约束的文本不同
   - 用户历史行为序列可能包含多个并发兴趣。对这些兴趣的快速跳跃和突然结束导致用户行为的序列数据看起来很嘈杂。一个可能的方向是设计特殊的结构来以序列方式对此类数据进行建模。
 ## mini-batch aware regularization
+如果不加入正则，在第一个epoch之后效果会大大下降
+加入l2正则，在计算梯度优化参数的时候，需要计算batch内全部参数，计算量太大
+提出了只计算非零稀疏特征的l2正则，且正则强度与特征频次有关，频次越高正则强度越低，反之越高
 ## data adapative activation function
 是对PReLU的改良
 PReLU的问题
@@ -26,3 +29,5 @@ PReLU的问题
 ![image](https://user-images.githubusercontent.com/94423063/143731648-e5467386-5fe5-4cc9-a249-13707da0e390.png)
 - 整流点在均值附近
 - 概率是经过一个sigmoid函数的计算
+- ![image](https://user-images.githubusercontent.com/94423063/143734591-b00667e5-64e4-4c44-a67f-b10ffafe3569.png)
+
