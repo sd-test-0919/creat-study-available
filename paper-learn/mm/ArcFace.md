@@ -1,0 +1,3 @@
+# ArcFace和SphereFace以及CosineFace
+Gradient domination的问题。 这个问题产生的原因是不同任务的loss的梯度相差过大， 导致梯度小的loss在训练过程中被梯度大的loss所带走。 题主所说的问题1和2都是指这个问题。
+
