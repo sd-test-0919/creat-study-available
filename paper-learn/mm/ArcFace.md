@@ -15,3 +15,4 @@ Gradient domination的问题。 这个问题产生的原因是不同任务的los
 ![image](https://user-images.githubusercontent.com/94423063/144701608-8a1f3aff-fad9-4963-aaf4-d96e0f386125.png)
 ![image](https://user-images.githubusercontent.com/94423063/144701627-e1cd667a-79fc-432f-adb8-35584bcbceb5.png)
 - 引入了角度margin m加强类内相似性和类间差距
+![image](https://user-images.githubusercontent.com/94423063/144702967-bf5870c4-ed95-4ade-bf7c-e5f63577734b.png)
