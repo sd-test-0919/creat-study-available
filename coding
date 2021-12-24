@@ -1,3 +1,4 @@
 nn.Module https://pytorch.zhangxiann.com/3-mo-xing-gou-jian/3.1-mo-xing-chuang-jian-bu-zhou-yu-nn.module
 torch.nn.Parameter 将一个不可训练的类型Tensor转换成可以训练的类型parameter并将这个parameter绑定到这个module里面
 https://www.jianshu.com/p/d8b77cc02410
+checkpoint.checkpoint https://blog.csdn.net/ONE_SIX_MIX/article/details/93937091
