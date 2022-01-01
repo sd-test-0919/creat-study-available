@@ -19,3 +19,14 @@
       ...  
       model = NeuralNetwork().to(device)  
       print(model)  
+##### Optimizing the Model Parameters
+a loss function and an optimizer.
+- makes predictions
+- backpropagates the prediction
+##### Saving Models
+serialize the internal state dictionary
+Loading Models
+re-creating the model structure and loading the state dictionary 
+
+### TENSORS
+encode the inputs and outputs of a model, as well as the model’s parameters.
